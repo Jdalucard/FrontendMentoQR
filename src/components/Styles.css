@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayishblue: hsl(220, 15%, 55%);
+  --Darkblue: hsl(218, 44%, 22%);
+  --ff-base: "Outfit", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+.Contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ContenedorCard {
+  display: flex;
+  margin: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--White);
+  border-radius: 1rem;
+  padding: 15px;
+  width: 70%;
+  gap: 0.5rem;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.CardImage {
+  border-radius: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.texto h3 {
+  font-weight: var(--fw-bold);
+  font-size: 1.2rem;
+}
+.texto p {
+  font-weight: var(--fw-regular);
+  color: var(--Grayishblue);
+  font-size: 0.7rem;
+  white-space: pre-line;
+}
+
+@media (max-width: 480px) {
+  .ContenedorCard {
+    min-width: 350px;
+  }
+}
